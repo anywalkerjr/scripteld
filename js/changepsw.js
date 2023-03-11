@@ -10,7 +10,7 @@ $(document).ready(function($){
             currentUser.password = newPassword;
             localStorage.setItem(user, JSON.stringify(currentUser));
             alert('Successful changing password!');
-            window.location.href = 'http://127.0.0.1:5500/project_6m/scripteld/scripteld.html';
+            window.location.href = 'https://anywalkerjr.github.io/scripteld/scripteld.html';
         }else if(passwordVal != currentUser.password){
             alert('Incorrect password!')
         }
