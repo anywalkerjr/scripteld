@@ -18,7 +18,7 @@ $(document).ready(function($){
       let sureOut = confirm('Are you sure? ');
       if(sureOut == true){
         sessionStorage.removeItem('currentUser');
-        window.location.href = 'http://127.0.0.1:5500/project_6m/scripteld/scripteld.html';
+        window.location.href = 'https://anywalkerjr.github.io/scripteld/scripteld.html';
       }
     })
     $('.warning').click(function(){
@@ -28,7 +28,7 @@ $(document).ready(function($){
         if (pswconfirm == currentUser.password)
           sessionStorage.removeItem('currentUser');
           localStorage.removeItem(user);
-          window.location.href = 'http://127.0.0.1:5500/project_6m/scripteld/scripteld.html';
+          window.location.href = 'https://anywalkerjr.github.io/scripteld/scripteld.html';
       }
     })
     $('#profilePicChange').on('click', function() {
