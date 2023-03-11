@@ -12,7 +12,7 @@ $(document).ready(function($){
         }else{
             if (user.password === password) {
                 alert('Login successful!');
-                window.location.href = 'http://127.0.0.1:5500/project_6m/scripteld/scripteld.html';
+                window.location.href = 'https://anywalkerjr.github.io/scripteld/scripteld.html';
                 sessionStorage.setItem('currentUser', user.username);
             } else if (user.password != password) {
                 alert('Invalid username or password.');
