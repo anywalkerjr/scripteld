@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/formstyles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/changeTheme.js"></script>
+  </head>
+  <body>
+    <h1><a class="h1A" href="scripteld.html">scripteld</a></h1>
+    <form id="registration-form">
+      <div class="container">
+        <label for="firstname"><b>Your first name</b></label>
+        <input type="text" id="userFirstName" placeholder="Enter Your First Name" name="firstname" required>
+        <label for="lastname"><b>Your last name</b></label>
+        <input type="text" id="userLastName" placeholder="Enter Your Last Name" name="lastname" required>
+        <label for="username"><b>Create a username</b></label>
+        <input type="text" id="username" placeholder="Enter Your Username" name="username" required>
+        <label for="primaryLanguage"><b>Who is you?</b></label>
+        <select id="languageSelect" name="language">
+            <option value="Python developer">Python developer</option>
+            <option value="Java developer">Java developer</option>
+            <option value="Ruby Developer">Ruby developer</option>
+            <option value="C# developer">C# developer</option>
+            <option value="C++ developer">C++ developer</option>
+            <option value="Web-Designerr">Web-Designer</option>
+        </select>
+        <label for="age"><b>What is your age</b></label>
+        <input type="number" id="userAge" placeholder="Enter Your Age" name="age" required value="12" max="100" min="12">
+        <label for="email"><b>Please enter your email</b></label>
+        <input type="email" id="userEmail" placeholder="example@mail.com" name="email" required >
+        <label for="password"><b>Create a password</b></label>
+        <div class="show-password">
+            <input type="password" class="passwordN" placeholder="Enter Password" id="password" name="password"  required>
+            <img style='position: relative;' class="view" src="images/icon_views.svg">
+        </div>
+        <button type="submit">Registrate</button>
+      </div>
+    </form>
+    <div class="container2">
+        <p>Already have an account? <a href="loginForm.html">Login!</a></p>
+    </div>
+  </body>
+</html>

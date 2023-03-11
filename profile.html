@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>User Profile</title>
+    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/profile.js"></script>
+	<script src="js/changeTheme.js"></script>
+</head>
+<body>
+  <h1><a class="h1A" href="scripteld.html">scripteld</a></h1>
+	<div class="container">
+		<h1 class="h1">Profile</h1>
+    <div class="bio">
+    <ul>
+        <li><img class="profilePic" src="../scripteld/images/no-image-v2-500x383@2x.jpg"> <input type="file" id="profilePicInput" style="display: none;"></li>
+        
+        <li>
+            <input type="button" class="button" id="profilePicChange" value="Change Profile Picture">
+        </li>
+    </ul>
+		<ul>
+      <h3> Bio</h3>
+			<li>
+				<label>First Name:</label>
+				<span id="userFirstName">John</span>
+			</li>
+			<li>
+				<label>Last Name:</label>
+				<span id="userLastName">Doe</span>
+			</li>
+			<li>
+				<label>Username:</label>
+				<span id="username">johndoe</span>
+			</li>
+			<li>
+				<label>You is:</label>
+				<span id="language">JavaScript developer</span>
+			</li>
+			<li>
+				<label>Age:</label>
+				<span id="userAge">30</span>
+			</li>
+			<li>
+				<label>E-mail:</label>
+				<span id="userEmail">johndoe@gmail.com</span>
+			</li>
+		</ul>
+    <ul>
+      <h3>Account</h3>
+			<li>
+				<label>Subsribers:</label>
+				<span>0</span>
+			</li>
+			<li>
+				<label>Subsribes:</label>
+				<span>0</span>
+			</li>
+			<li>
+				<label>Your Favorites:</label>
+				<span>0</span>
+			</li>
+		</ul>
+        <ul>
+            <li>
+				<input type="button" class="button" id="logOut" value="Log Out">
+			</li>
+            <li>
+				<a href="changepsw.html"><input type="button" class="button"  value="Change Password"></a>
+			</li>
+            <li>
+				<input type="button" class="warning" value="Delete Account">
+			</li>
+        </ul>
+  </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Post Create</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/postCreate.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		<script src="js/postCreate.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/changeTheme.js"></script>
+	</head>
+    <header>
+        <a href='scripteld.html'><h2>scripteld</h2></a>
+        <a href='loginForm.html'><input type="button" value="Login or Register"></a>
+    </header>
+<body>
+    <main>
+        <form id="post">
+            <label for="title">Title</label>
+            <input type="text" maxlength="45" id="title" name="title" placeholder="Enter title" required>
+        <label for="content">Content</label>
+        <textarea maxlength="8000" id="content" name="content" placeholder="Enter content" style="max-width: 100%; min-width: 100%; min-height: 150px;"></textarea>
+        <label class="custom-file-upload">
+            Add Image
+            <input type="file" id="image" name="image">
+            <input type="button" class="button" id="image-upload" value="Select File">
+            <label class="outputFiles">Selected File: <p id="outputFiles">none</p></label>
+        </label>
+        <input type="submit" value="Publish">
+    </form>
+</main>
+</body>
+</html>

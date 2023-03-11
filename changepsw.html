@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Password</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/formstyles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/changepsw.js"></script>
+    <script src="js/changeTheme.js"></script>
+  </head>
+  <body>
+    <h1><a class="h1A" href="scripteld.html">scripteld</a></h1>
+    <form id="changePassword-form">
+        <div class="container">
+          <label for="password"><b>Enter your current password</b></label>
+          <div class="show-password">
+            <input type="password" class="passwordN" placeholder="Enter Your Password" id="password" name="password"  required>
+            <img style='position: relative;' class="view" src="images/icon_views.svg">
+          </div>
+          <label for="newPassword"><b>Enter new password</b></label>
+          <div class="show-password">
+              <input type="password" class="passwordN" placeholder="Enter Your Password" id="passwordNew" name="passwordNew"  required>
+              <img style='position: relative; visibility: hidden;' class="view" src="images/icon_views.svg">
+          </div>
+          <button type="submit" class="submit">Change Password</button>
+        </div>
+      </form>
+    <div class="container2">
+        <p>Forgot <a href="forgotpsw.html">password?</a></p>
+    </div>
+  </body>
+</html>

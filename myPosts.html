@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/myPostsScript.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/changeTheme.js"></script>    
+    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/style.css">
+    <title>Scripteld</title>
+</head>
+<header>
+    <h2>scripteld</h2>
+    <a href='loginForm.html'><input type="button" value="Login or Register"></a>
+</header>
+<body>
+    
+    <div class="main">
+        <div class="leftMenu">
+            <section class="navigation">
+                <p>Navigation</p>
+                <ul>
+                    <li><a href="scripteld.html">Main</a></li>
+                    <li>Popular</li>
+                    <li>Subscriptions</li>
+                    <li id="chosen">My Posts</li>
+                </ul>
+            </section>
+            <section class="search">
+                <p>Search Article</p>
+                <input type="search" class="searchBar" placeholder="Enter title">
+            </section>
+            <footer>
+                <p>Found a mistake?</p>
+                <p>Help</p>
+                <div>
+                    <img src="images/telegram_ico_socialMed.png" alt="telegram">
+                    <img src="images/vk_ico_socialMed.png" alt="vk">
+                    <img src="images/mail_ico_socialMed.png" alt="mail">
+                </div>
+                <p>Copyright © 2023. Scripteld</p>
+                <p>The perfect tool for exchange
+                    knowledge between developers</p>
+                <input type="button" id="changeTheme" value="Change Theme">
+            </footer>
+        </div>
+        <div class="rightMenu">
+            <section class="articleZone">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
