@@ -511,6 +511,13 @@ body::-webkit-scrollbar-thumb{
         margin-top: 5px;
         width: 87%;
     }
+    .socialMedSmall{
+        background-color: #4047CF;
+        width: fit-content;
+        border-radius: 5px;
+        padding: 3%;
+        padding-bottom: 0;
+    }
     .footerSmall input{
         font-size: 12px;
         font-family: 'Prompt', sans-serif;
