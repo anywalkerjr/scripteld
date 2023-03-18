@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+body{
+    margin:0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #2B308B;
+    font-weight: 550;
+    height: auto;
+    opacity: 0;
+    transition: .3s;
+}
+.hburgerMenu{
+    display: none;
+}
+.stickHburger{
+    width: 80%;
+    height: 3px;
+    background: #4047CF;
+}
+.hburgerMenuIcon{
+    display: none;
+}
+header{
+    height: 60px;
+    background-color: white;
+    color: #4047CF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+header h2{
+    font-size: 42px;
+    font-weight: 600;
+}
+header h3{
+    font-size: 24px;
+    
+}
+header input{
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    background-color: #4047CF;
+    color: white;
+    padding: 9px;
+    width: 240px;
+    border-radius: 10px;
+    border: none;
+}
+header input:active{
+    background-color: #3339a7;
+    color: #dddddd;
+}
+header input:hover{
+    opacity: 0.9;
+  }
+header a{
+    text-decoration: none;
+    color: #4047CF;
+}
+.navigation{
+    font-size: 24px;
+    background-color: white;
+    padding: 8%;
+    border-radius: 15px;
+    width: 92%;
+    margin-bottom: 20px ;
+    color: #4047CF;
+}
+.navigation a{
+    text-decoration: none;
+    color: #4047CF;
+}
+.navigation p, .search p{
+    font-size: 26px;
+    font-weight: 600;
+}
+.search{
+    font-size: 24px;
+    background-color: white;
+    padding: 8%;
+    border-radius: 15px;
+    width: 92%;
+    margin-bottom: 20px ;
+    color: #4047CF;
+}
+footer{
+    font-size: 12px;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    color: #dddddd;
+}
+footer input{
+    font-size: 12px;
+    font-family: 'Prompt', sans-serif;
+    width: fit-content;
+    color: #dddddd;
+    border: none;
+    padding: 0;
+    background-color: unset;
+    cursor: pointer;
+}
+.searchBar{
+    background-color: #4047CF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+    background-image: url(/project_6m/scripteld/images/icon\ _search_outline_search.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px);
+    outline: none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 5px 20px;
+    padding-right:45px;
+    height: 3.5em;
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.searchBar::placeholder{
+    color:#dddddd;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+.navigation ul{
+    list-style:none;
+    padding: 0;
+}
+.navigation li{
+    padding: 5px 25px;
+    margin: 5px 0px;
+}
+#chosen{
+    color: white;
+    background-color: #4047CF;
+    border-radius: 10px;
+}
+.articleText{
+    hyphens: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 16px;
+    margin: 30px 20px;
+    margin-top: 0px;
+    color: #4047CF;
+}
+.rightMenu{
+    margin-top: 40px;
+    margin-right: 12px;
+    height: 20%;
+    width: 85%;
+}
+
+.articleZone{
+    height: 30%;
+    overflow-y: auto;
+}
+body::-webkit-scrollbar-track{
+    background: white;
+}
+
+body::-webkit-scrollbar{
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb{
+	border: 4px solid transparent;
+    border-radius: 10px;
+    background-color: #4047CF;
+    background-clip: content-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.article{
+    background-color: white;
+    margin: 0 40px;
+    margin-bottom: 40px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.articleHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    background-color: #4047CF;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.user{
+    margin-right: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.leftMenu{
+    margin-top: 3%;
+    margin-left: 3%;
+    overflow-x:visible;
+    width: 15%;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+.leftMenu::-webkit-scrollbar{
+    display: none;
+}
+.articleHead input{
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    color: #4047CF;
+    padding: 9px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    display: inline;
+}
+.articleHead input:active{
+    background-color: #dddddd;
+    color: #3339a7;
+}
+.articleHead img{
+    width: 65px;
+    height: 65px;
+    border: white solid 2px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 100%;
+}
+.profileP{
+    width: 50px;
+    height: 50px;
+    border: #4047CF solid 2px;
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 100%;
+    margin-left: 18px;
+}
+.notification{
+    width: 28px;
+    height: 28px;
+    margin-right: 18px;
+    margin-left: 46px;
+}
+.profileIn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.postMake{
+    width: 120px;
+    padding: 10px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 20px;
+    justify-content: space-around;
+    width: 40%;
+    user-select: none;
+}
+.rating ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-right: 10px;
+}
+.rating li{
+    margin-left: 5px;
+}
+.views{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.views p{
+    margin-left: 8px;
+    color: white;
+}
+.articleImg{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.articleImg img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+.ratingIn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #4047CF;
+    border-radius: 15px;
+}
+.languageWork::before{
+    content: '•';
+    margin: 5px;
+}
+.languageWork{
+    margin-right: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.articleZone #notPublished{
+    color: #4047CF;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+@media (max-width: 1250px){ 
+    .search{
+        font-size: 16px;
+    }
+    .navigation{
+        font-size: 16px;
+    }
+    .navigation p, .search p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    footer{
+        font-size: 9px;
+    }
+    footer input{
+        font-size: 9px;
+    }
+    .socialMed img{
+        width: 25%;
+    }
+}
+
+@media (max-width: 900px){ 
+    .navigation{
+        display: none;
+    }
+    .leftMenu{
+        position: sticky;
+        top: 80px;
+        left: 0;
+        right:0;
+        bottom: 0;
+        width: 0;
+        margin-top: 2px;
+        height: 100vh;
+        z-index: 999;
+        margin-left: 0;
+    }
+    .search{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .hburgerMenu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: fit-content;
+        position: sticky;
+        background: white;
+        transform: translateX(-100vw);
+    }
+    .hburgerMenuIcon{
+        margin-top: 7px;
+        width: 40px;
+        height: 25px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigationSmall{
+        font-size: 16px;
+        color: #4047CF;
+        padding: 5px; 
+        margin-top: 5px;
+        padding: 15px; 
+        background-color: #f8f8f8;
+    }
+    .navigationSmall ul{
+        list-style:none;
+        padding-left: 10px;
+
+    }
+    #chosenSmall{
+        color: white;
+        background-color: #4047CF;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    .navigationSmall li{
+        padding-right: 10px;
+        margin: 5px 0px;
+        padding-left: 5px;
+    }
+    .navigationSmall a{
+        text-decoration: none;
+        color: #4047CF;
+    }
+    .navigationSmall li{
+        list-style: none;
+    }
+    .navigationSmall p, .searchSmall p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .searchBarSmall{
+        background-color: #4047CF;
+        color: white;
+        border: none;
+        padding: 4px;
+        font-family: 'Prompt', sans-serif;
+        border-radius: 8px;
+        background-image: url(/project_6m/scripteld/images/icon\ _search_outline_search.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px);
+        outline: none;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        padding: 5px 20px;
+        padding-right:45px;
+        height: 2.5em;
+        font-size: 13px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .searchBarSmall::placeholder{
+        color:white;
+    }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+         display: none; 
+    }
+    .searchSmall{
+        font-size: 16px;
+        color: #4047CF;
+        padding: 15px; 
+        margin-top: 5px;
+        background-color: #fcfcfc;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .rightMenu{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+    .articleZone{
+        width: 100%;
+    }
+    .user{
+        margin-right: 3%;
+        margin-left: 2%;
+        font-size: 20px;
+    }
+    .languageWork{
+        margin-right: 3%;
+    }
+    header input{
+        font-size: 2.5vw;
+        width: fit-content;
+    }
+    .articleHead input{
+        display: none;
+    }
+    .articleName{
+        font-size: 14px
+    }
+    .articleText p{
+        font-size: 12px;
+    }
+    .footerSmall{
+        font-size: 12px;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        color: #4047CF;
+        background-color: #fcfcfc;
+        margin-top: 5px;
+        width: 87%;
+    }
+    .footerSmall input{
+        font-size: 12px;
+        font-family: 'Prompt', sans-serif;
+        width: fit-content;
+        color: #4047CF;
+        border: none;
+        padding: 0;
+        background-color: unset;
+        cursor: pointer;
+    }
+}
