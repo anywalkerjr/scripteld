@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/myPostsScript.js"></script>
     <script src="js/script.js"></script>
     <script src="js/changeTheme.js"></script>    
@@ -16,6 +17,11 @@
     <title>Scripteld</title>
 </head>
 <header>
+    <div class="hburgerMenuIcon">
+        <div class="stickHburger"></div>
+        <div class="stickHburger"></div>
+        <div class="stickHburger"></div>
+    </div>
     <h2>scripteld</h2>
     <a href='loginForm.html'><input type="button" value="Login or Register"></a>
 </header>
@@ -26,7 +32,7 @@
             <section class="navigation">
                 <p>Navigation</p>
                 <ul>
-                    <li><a href="scripteld.html">Main</a></li>
+                    <li><a href='scripteld.html'>Main</a></li>
                     <li>Popular</li>
                     <li>Subscriptions</li>
                     <li id="chosen">My Posts</li>
@@ -36,6 +42,34 @@
                 <p>Search Article</p>
                 <input type="search" class="searchBar" placeholder="Enter title">
             </section>
+            <div class="hburgerMenu">
+                <section class="navigationSmall">
+                    <p>Navigation</p>
+                    <ul>
+                        <li><a href='scripteld.html'>Main</a></li>
+                        <li>Popular</li>
+                        <li>Subscriptions</li>
+                        <li id="chosenSmall">My Posts</li>
+                    </ul>
+                </section>
+                <section class="searchSmall">
+                    <p>Search Article</p>
+                    <input type="search" class="searchBarSmall" placeholder="Enter title">
+                </section>
+                <section class="footerSmall">
+                    <p>Found a mistake?</p>
+                    <p>Help</p>
+                    <div class="socialMed">
+                        <img src="images/telegram_ico_socialMed.png" alt="telegram">
+                        <img src="images/vk_ico_socialMed.png" alt="vk">
+                        <img src="images/mail_ico_socialMed.png" alt="mail">
+                    </div>
+                    <p>Copyright © 2023. Scripteld</p>
+                    <p>The perfect tool for exchange
+                        knowledge between developers</p>
+                    <input type="button" class="changeTheme" value="Change Theme">
+                </section>
+            </div>
             <footer>
                 <p>Found a mistake?</p>
                 <p>Help</p>
