@@ -5,6 +5,7 @@ body {
 	background-color: #2b308b;
 	font-weight: 550;
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,7 +16,7 @@ body {
 .container {
 	color: #4047cf;
 	border: 3px solid #f1f1f1;
-	width: auto;
+	width: 90%;
 	margin: 0 auto;
 	padding: 10px;
 	background-color: #ffffff;
@@ -39,10 +40,11 @@ body {
 .h1A {
 	text-decoration: none;
 	color: white;
+	font-size: 32px;
 }
 ul {
 	list-style: none;
-	padding: 0px 40px;
+	padding: 0px 5%;
 	margin-top: 0;
 }
 li {
@@ -64,7 +66,8 @@ label {
 .bio {
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: center;
+	flex-wrap: wrap;
 	font-size: 20px;
 	align-items: start;
 	margin: 15px;
@@ -114,38 +117,38 @@ body::-webkit-scrollbar-thumb {
 	background-clip: content-box;
 }
 @media (max-width: 1020px) {
-	.h1A{
-	  font-size: 26px;
+	.h1A {
+		font-size: 26px;
 	}
-	.bio{
-	  font-size: 16px;
-	  margin: 8px;
+	.bio {
+		font-size: 16px;
+		margin: 8px;
 	}
-	.button{
+	.button {
 		font-size: 12px;
 		padding: 4px;
 		border-radius: 7px;
 	}
-	.warning{
-	  font-size: 12px;
-	  padding: 4px;
-	  border-radius: 7px;
+	.warning {
+		font-size: 12px;
+		padding: 4px;
+		border-radius: 7px;
 	}
-	.h1{
-	  margin-bottom: 10px;
-	  padding: 10px;
-	  border-radius: 10px;
-	  font-size: 24px;
+	.h1 {
+		margin-bottom: 10px;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 24px;
 	}
-  }
-  @media (max-width: 970px) {
-	.bio{
-	  justify-content:start;
+}
+@media (max-width: 970px) {
+	.bio {
+		justify-content: start;
 	}
-	.pfp{
-	  width:100%;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
+	.pfp {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
-  }
+}
