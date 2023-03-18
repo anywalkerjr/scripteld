@@ -11,7 +11,7 @@ $(document).ready(function($){
       if(currentUser != undefined){
         const names = JSON.parse(localStorage.getItem(currentUser)).names;
         const pfp = JSON.parse(localStorage.getItem(currentUser)).profileImg;
-        $('header').html('<a href="scripteld.html"><h2>scripteld</h2></a><div class="profileIn"><a href="postCreating.html"><input type="button" class="postMake" value="Publish"></a><img class="notification" style="position: relative;" src="images/icon_notification.svg"><h3><a href="profile.html">'+ names +'</a></h3><a href="profile.html"><img class="profileP" src="images/no-image-v2-500x383@2x.jpg"></a></div>');
+        $('header').html('<div class="hburgerMenuIcon"><div class="stickHburger"></div><div class="stickHburger"></div><div class="stickHburger"></div></div><a href="scripteld.html"><h2>scripteld</h2></a><div class="profileIn"><a href="postCreating.html"><input type="button" class="postMake" value="Publish"></a><img class="notification" style="position: relative;" src="images/icon_notification.svg"><h3><a href="profile.html">'+ names +'</a></h3><a href="profile.html"><img class="profileP" src="images/no-image-v2-500x383@2x.jpg"></a></div>');
         $('.profileP').attr('src', pfp);
       };
 
