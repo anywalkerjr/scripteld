@@ -22,9 +22,8 @@ $(document).ready(function($) {
 
 		anime({
 			targets: '#stick1',
-			rotate: -45,
-
-			translateX: '-11px',
+			translateY: '8px',
+			rotate: '-225deg',
 			easing: 'easeInOutQuad',
 			direction: 'alternate',
 			duration: 650,
@@ -40,9 +39,8 @@ $(document).ready(function($) {
 		});
 		anime({
 			targets: '#stick3',
-			rotate: 45,
-
-			translateX: '-11px',
+			translateY: '-8px',
+			rotate: '225deg',
 			easing: 'easeInOutQuad',
 			direction: 'alternate',
 			duration: 650,
@@ -71,7 +69,7 @@ $(document).ready(function($) {
 		anime({
 			targets: '#stick1',
 			rotate: 0,
-
+			translateY: '0px',
 			translateX: '0px',
 			easing: 'easeInOutQuad',
 			direction: 'alternate',
@@ -89,7 +87,7 @@ $(document).ready(function($) {
 		anime({
 			targets: '#stick3',
 			rotate: 0,
-
+			translateY: '0px',
 			translateX: '0px',
 			easing: 'easeInOutQuad',
 			direction: 'alternate',
