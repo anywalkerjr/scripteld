@@ -518,7 +518,7 @@ body::-webkit-scrollbar-thumb {
 	.profileSmall{
 		font-size: 16px;
 		color: #4047cf;
-		padding: 15px;
+		padding: 15px; /*what the hell*/
 		margin-top: 5px;
 		background-color: #f8f8f8;
 	}
