@@ -16,7 +16,7 @@ $(document).ready(function() {
             $('.notification').attr('src', 'images/icon_notification.svg')
         };
     }
-    $('#changeTheme').on('click', function(){
+    $('.changeTheme').on('click', function(){
         if($('#cssLink').attr('href').includes("white") == true){
             $('#cssLink').attr('href', $('#cssLink').attr('href').replace('white', 'black'));
             $('.notification').attr('src', 'images/icon_notification.svg')
