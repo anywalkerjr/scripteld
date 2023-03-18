@@ -558,10 +558,10 @@ body::-webkit-scrollbar-thumb {
 		cursor: pointer;
 	}
 	.profileIn{
-		display: none;
-	}
-	header{
-		justify-content: space-around;
+		opacity: 0;
+		user-select: none;
+		overflow: hidden;
+		width: 0px;
 	}
 	.profileInSmall{
 		display: flex;
