@@ -110,7 +110,7 @@ footer input {
 	padding: 10px;
 	font-family: 'Prompt', sans-serif;
 	border-radius: 10px;
-	background-image: url(/scripteld/images/icon _search_outline_search.png);
+	background-image: url(/scripteld/images/icon%20_search_outline_search.png);
 	background-repeat: no-repeat;
 	background-position: calc(100% - 20px);
 	outline: none;
