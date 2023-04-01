@@ -206,3 +206,15 @@ body::-webkit-scrollbar-thumb{
     background-color: #b80c09;
     background-clip: content-box;
 }
+@media (max-width: 675px) {
+	header {
+		flex-direction: column;
+		height: min-content;
+	}
+	header h3 {
+		text-align: center;
+	}
+	header h2{
+		margin: 0;
+	}
+}
