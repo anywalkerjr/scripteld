@@ -110,7 +110,7 @@ footer input {
 	padding: 10px;
 	font-family: 'Prompt', sans-serif;
 	border-radius: 10px;
-	background-image: url(/scripteld/images/icon%20_search_outline_search.png);
+	background-image: url(/project_6m/scripteld/images/icon\ _search_outline_search.png);
 	background-repeat: no-repeat;
 	background-position: calc(100% - 20px);
 	outline: none;
@@ -210,12 +210,12 @@ body::-webkit-scrollbar-thumb {
 }
 .leftMenu {
 	margin-left: 3%;
+	margin-top: 40px;
 	overflow-x: visible;
 	width: 15%;
 	position: sticky;
 	top: 120px;
 	height: calc(100vh - 125px);
-	overflow-y: scroll;
 	padding-right: 2%;
 	background-color: #2b308b;
 }
@@ -518,7 +518,7 @@ body::-webkit-scrollbar-thumb {
 	.profileSmall{
 		font-size: 16px;
 		color: #4047cf;
-		padding: 15px; /*what the hell*/
+		padding: 15px;
 		margin-top: 5px;
 		background-color: #f8f8f8;
 	}
