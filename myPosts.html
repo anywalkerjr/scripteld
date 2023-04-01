@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/myPostsScript.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/changeTheme.js"></script>    
-    <link type="text/css" id="cssLink" rel="stylesheet" href="css/whiteTheme/style.css">
+    <script src="js/changeTheme.js"></script>
     <title>Scripteld</title>
 </head>
 <header>
-    <div class="hburgerMenuIcon">
-        <div class="stickHburger"></div>
-        <div class="stickHburger"></div>
-        <div class="stickHburger"></div>
-    </div>
+    <div class="hburgerMenuIcon"><div id="stick1" class="stickHburger"></div><div id="stick2" class="stickHburger"></div><div id="stick3" class="stickHburger"></div></div>
     <h2>scripteld</h2>
     <a href='loginForm.html'><input type="button" value="Login or Register"></a>
 </header>
@@ -32,7 +27,7 @@
             <section class="navigation">
                 <p>Navigation</p>
                 <ul>
-                    <li><a href='scripteld.html'>Main</a></li>
+                    <li ><a href='scripteld.html'>Main</a></li>
                     <li>Popular</li>
                     <li>Subscriptions</li>
                     <li id="chosen">My Posts</li>
@@ -43,13 +38,17 @@
                 <input type="search" class="searchBar" placeholder="Enter title">
             </section>
             <div class="hburgerMenu">
+                <section class="profileSmall">
+                    <p>Profile</p>
+                    <a href='loginForm.html'><input type="button" value="Login or Register"></a>
+                </section>
                 <section class="navigationSmall">
                     <p>Navigation</p>
                     <ul>
-                        <li><a href='scripteld.html'>Main</a></li>
+                        <li id="chosenSmall">Main</li>
                         <li>Popular</li>
                         <li>Subscriptions</li>
-                        <li id="chosenSmall">My Posts</li>
+                        <li><a href='myPosts.html'>My Posts</a></li>
                     </ul>
                 </section>
                 <section class="searchSmall">
@@ -59,7 +58,7 @@
                 <section class="footerSmall">
                     <p>Found a mistake?</p>
                     <p>Help</p>
-                    <div class="socialMed">
+                    <div class="socialMedSmall">
                         <img src="images/telegram_ico_socialMed.png" alt="telegram">
                         <img src="images/vk_ico_socialMed.png" alt="vk">
                         <img src="images/mail_ico_socialMed.png" alt="mail">
@@ -73,7 +72,7 @@
             <footer>
                 <p>Found a mistake?</p>
                 <p>Help</p>
-                <div>
+                <div class="socialMed">
                     <img src="images/telegram_ico_socialMed.png" alt="telegram">
                     <img src="images/vk_ico_socialMed.png" alt="vk">
                     <img src="images/mail_ico_socialMed.png" alt="mail">
@@ -81,11 +80,13 @@
                 <p>Copyright © 2023. Scripteld</p>
                 <p>The perfect tool for exchange
                     knowledge between developers</p>
-                <input type="button" id="changeTheme" value="Change Theme">
+                <input type="button" class="changeTheme" value="Change Theme">
             </footer>
         </div>
         <div class="rightMenu">
             <section class="articleZone">
+                
+                
             </section>
         </div>
     </div>
