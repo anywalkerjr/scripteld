@@ -1,202 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-body{
-    margin:0;
-    font-family: 'Prompt', sans-serif;
-    background-color: #2B308B;
-    font-weight: 550;
-    height: auto;
-    opacity: 0;
-    transition: .3s;
+body {
+	margin: 0;
+	font-family: 'Prompt', sans-serif;
+	background-color: #2b308b;
+	font-weight: 550;
+	height: auto;
+	opacity: 0;
+	transition: .3s;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4047CF;
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #4047cf;
 }
-header{
-    height: 60px;
-    background-color: white;
-    color: #4047CF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
+header {
+	height: 60px;
+	background-color: white;
+	color: #4047cf;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 50px;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
 }
-header h2{
-    font-size: 42px;
-    font-weight: 600;
+header h2 {
+	font-size: 42px;
+	font-weight: 600;
 }
-header h3{
-    font-size: 24px;
-    
+header h3 {
+	font-size: 24px;
 }
-header input{
-    display: none;
+header input {
+	display: none;
 }
-header input:active{
-    background-color: #3339a7;
-    color: #dddddd;
+header input:active {
+	background-color: #3339a7;
+	color: #dddddd;
 }
-header input:hover{
-    opacity: 0.9;
-  }
-header a{
-    text-decoration: none;
-    color: #4047CF;
+header input:hover {
+	opacity: 0.9;
 }
-.profileP{
-    width: 50px;
-    height: 50px;
-    border: #4047CF solid 2px;
-    object-fit: cover;
-    padding: 2px;
-    border-radius: 100%;
-    margin-left: 18px;
+header a {
+	text-decoration: none;
+	color: #4047cf;
 }
-.notification{
-    width: 28px;
-    height: 28px;
-    margin-right: 18px;
-    margin-left: 46px;
+.profileP {
+	width: 50px;
+	height: 50px;
+	border: #4047cf solid 2px;
+	object-fit: cover;
+	padding: 2px;
+	border-radius: 100%;
+	margin-left: 18px;
 }
-.profileIn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.notification {
+	width: 28px;
+	height: 28px;
+	margin-right: 18px;
+	margin-left: 46px;
 }
-.postMake{
-    width: 120px;
-    padding: 10px;
+.profileIn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.postMake {
+	width: 120px;
+	padding: 10px;
 }
 form {
-    margin: 40px;
-    width: 90%;
-    padding: 20px;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0;
+	margin: 40px;
+	width: 90%;
+	padding: 20px;
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0;
 }
-input{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: #4047CF;
-    color: white;
-    border: none;
-    font-family: 'Prompt', sans-serif;
-    border-radius: 10px;
-    outline: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    height: 3.5em;
-    font-size: 13px;
-    margin-bottom: 20px;
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #4047cf;
+	color: white;
+	border: none;
+	font-family: 'Prompt', sans-serif;
+	border-radius: 10px;
+	outline: none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	height: 3.5em;
+	font-size: 13px;
+	margin-bottom: 20px;
 }
-input::placeholder, textarea::placeholder { 
-    color: white;
+input::placeholder,
+textarea::placeholder {
+	color: white;
 }
-textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: #4047CF;
-    color: white;
-    border: none;
-    font-family: 'Prompt', sans-serif;
-    border-radius: 10px;
-    outline: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    height: 3.5em;
-    font-size: 13px;
-    margin-bottom: 20px;
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #4047cf;
+	color: white;
+	border: none;
+	font-family: 'Prompt', sans-serif;
+	border-radius: 10px;
+	outline: none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	height: 3.5em;
+	font-size: 13px;
+	margin-bottom: 20px;
 }
-textarea::-webkit-scrollbar-track{
-    background: #4047CF;
-    border-radius: 15px;
-}
-
-textarea::-webkit-scrollbar{
-    width: 13px;
-}
-#outputFiles{
-    font-weight: 600;
+textarea::-webkit-scrollbar-track {
+	background: #4047cf;
+	border-radius: 15px;
 }
 
-textarea::-webkit-scrollbar-thumb{
+textarea::-webkit-scrollbar {
+	width: 13px;
+}
+#outputFiles {
+	font-weight: 600;
+}
+
+textarea::-webkit-scrollbar-thumb {
 	border: 4px solid transparent;
-    border-radius: 10px;
-    background-color: white;
-    background-clip: content-box;
+	border-radius: 10px;
+	background-color: white;
+	background-clip: content-box;
 }
-input[type=submit]{
-    font-family: 'Prompt', sans-serif;
-    margin-top: 16px;
-    font-size: 18px;
-    background-color: #4047CF;
-    color: white;
-    padding: 5px;
-    width: 100%;
-    border-radius: 10px;
-    border: none;
+input[type=submit] {
+	font-family: 'Prompt', sans-serif;
+	margin-top: 16px;
+	font-size: 18px;
+	background-color: #4047cf;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
 }
-input[type=submit]:active{
-    background-color: #3339a7;
-    color: #dddddd;
+input[type=submit]:active {
+	background-color: #3339a7;
+	color: #dddddd;
 }
-input[type=submit]:hover{
-    opacity: 0.9;
+input[type=submit]:hover {
+	opacity: 0.9;
 }
-#image{
-    display: none;
+#image {
+	display: none;
 }
-.custom-file-upload{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
+.custom-file-upload {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
 }
-.button{
-    font-family: 'Prompt', sans-serif;
-    font-size: 13px;
-    background-color: #4047CF;
-    color: white;
-    width: fit-content;
-    border-radius: 10px;
-    border: none;
-    text-align: left;
-    padding: 5px 40px;
-  }
-.button:active{
-    background-color: #3339a7;
-    color: #dddddd;
+.button {
+	font-family: 'Prompt', sans-serif;
+	font-size: 13px;
+	background-color: #4047cf;
+	color: white;
+	width: fit-content;
+	border-radius: 10px;
+	border: none;
+	text-align: left;
+	padding: 5px 40px;
 }
-input[type=button]:hover{
-    opacity: 0.9;
+.button:active {
+	background-color: #3339a7;
+	color: #dddddd;
 }
-body::-webkit-scrollbar-track{
-    background: white;
+input[type=button]:hover {
+	opacity: 0.9;
 }
-
-body::-webkit-scrollbar{
-    width: 13px;
+body::-webkit-scrollbar-track {
+	background: white;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar {
+	width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
 	border: 4px solid transparent;
-    border-radius: 10px;
-    background-color: #4047CF;
-    background-clip: content-box;
+	border-radius: 10px;
+	background-color: #4047cf;
+	background-clip: content-box;
+}
+@media (max-width: 675px) {
+	header {
+		flex-direction: column;
+		height: min-content;
+	}
+	header h3 {
+		text-align: center;
+	}
+	header h2{
+		margin: 0;
+	}
 }
