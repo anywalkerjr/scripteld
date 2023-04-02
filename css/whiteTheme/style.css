@@ -207,17 +207,22 @@ body::-webkit-scrollbar-thumb {
 	margin-right: 40px;
 	margin-left: 10px;
 	font-size: 20px;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	max-width: 70%; 
 }
 .leftMenu {
-	margin-left: 3%;
 	margin-top: 40px;
-	overflow-x: visible;
-	width: 15%;
-	position: sticky;
-	top: 120px;
-	height: calc(100vh - 125px);
-	padding-right: 2%;
+    margin-left: 3%;
+    width: 15%;
+    position: sticky;
+    top: 120px;
+    height: calc(100vh - 125px);
+    overflow-y: scroll;
+    padding-right: 2%;
 	background-color: #2b308b;
+    transform: translateX(0px);
 }
 .leftMenu::-webkit-scrollbar {
 	display: none;
