@@ -21,7 +21,7 @@ $(document).ready(function($) {
 				'</a></h3><a href="profile.html"><img class="profileP" src="images/no-image-v2-500x383@2x.jpg"></a></div>'
 		);
 		$('.profileSmall').html(
-			'    <p>Profile</p><div class="profileInSmall"><a href="postCreating.html"><input type="button" class="postMake" value="Publish"></a><div class="profileInfoSmall"><img class="notification" style="position: relative;" src="images/icon_notification.svg"><h3><a href="profile.html">' +
+			'    <p>Profile</p><div class="profileInSmall"><a href="postCreating.html"><input type="button" class="postMake" value="Publish"></a><div class="profileInfoSmall"><img class="notification" style="position: relative;" src="icon_notification_' + theme + 'Theme.svg"><h3><a href="profile.html">' +
 				names +
 				'</a></h3><a href="profile.html"></div><img class="profileP" src="images/no-image-v2-500x383@2x.jpg"></a></div>'
 		);
