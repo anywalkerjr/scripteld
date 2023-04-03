@@ -5,6 +5,7 @@ $(document).ready(function($) {
 	let articleID = localStorage.getItem('articlesID');
 	if(articleID == null) {
 		localStorage.setItem('articlesID', '0');
+		articleID = '0';
 	}
 	const form = document.querySelector('#post');
 	$('#image-upload').on('click', function() {
