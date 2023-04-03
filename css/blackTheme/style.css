@@ -454,7 +454,7 @@ body::-webkit-scrollbar-thumb {
 		padding: 4px;
 		font-family: 'Prompt', sans-serif;
 		border-radius: 8px;
-		background-image: url(/project_6m/scripteld/images/icon\ _search_outline_search.png);
+		background-image: url(https://anywalkerjr.github.io/scripteld/images/icon%20_search_outline_search.png);
 		background-repeat: no-repeat;
 		background-position: calc(100% - 20px);
 		outline: none;
