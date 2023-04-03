@@ -110,7 +110,7 @@ footer input {
 	padding: 10px;
 	font-family: 'Prompt', sans-serif;
 	border-radius: 10px;
-	background-image: url(../../images/icon%20_search_outline_search.png);
+	background-image: url(https://anywalkerjr.github.io/scripteld/images/icon%20_search_outline_search.png);
 	background-repeat: no-repeat;
 	background-position: calc(100% - 20px);
 	outline: none;
@@ -573,14 +573,14 @@ body::-webkit-scrollbar-thumb {
 		width: 12%;
 		margin: 0;
 	}
-	.profileInfoSmall{
+	.profileInfoSmall {
 		margin-top: 10%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.profileInfoSmall h3{
+	.profileInfoSmall h3 {
 		margin: 0;
 		font-size: 16px;
 		white-space: nowrap; 
@@ -588,11 +588,11 @@ body::-webkit-scrollbar-thumb {
   		text-overflow: ellipsis;
   		max-width: 70%; 
 	}
-	.profileInSmall a{
+	.profileInSmall a {
 		text-decoration: none;
 		color: white;
 	}
-	.profileInSmall img{
+	.profileInSmall img {
 		margin: 0;
 		margin-top: 14%;
 	}
