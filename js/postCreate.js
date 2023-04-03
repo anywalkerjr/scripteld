@@ -3,7 +3,7 @@ $(document).ready(function($) {
 	let articleTitle;
 	let articleContent;
 	let articleID = localStorage.getItem('articlesID');
-	if(articleID == undefined){
+	if(articleID == null) {
 		localStorage.setItem('articlesID', '0');
 	}
 	const form = document.querySelector('#post');
